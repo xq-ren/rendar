@@ -1,0 +1,67 @@
+### Maven / Java ###
+**/target/
+*.class
+*.jar
+*.war
+*.ear
+
+# Keep target directories if they somehow exist inside source directories
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### Spring Boot ###
+backend/HELP.md
+
+### Maven Wrapper ###
+# Maven wrapper JAR can be regenerated
+.mvn/wrapper/maven-wrapper.jar
+
+### IntelliJ IDEA ###
+.idea/
+*.iws
+*.iml
+*.ipr
+
+### VS Code ###
+.vscode/
+
+### Eclipse / STS ###
+.apt_generated/
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### Environment / Secrets ###
+.env
+.env.*
+!.env.example
+
+### Logs ###
+*.log
+logs/
+
+### Operating System ###
+.DS_Store
+Thumbs.db
+
+### Temporary Files ###
+*.tmp
+*.temp
+*.swp
+*~
+
+### Frontend ###
+# Will be relevant once the React frontend is added
+node_modules/
+dist/
+coverage/
