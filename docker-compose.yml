@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:17
+    container_name: rendar-postgres
+    environment:
+      POSTGRES_DB: rendar
+      POSTGRES_USER: rendar
+      POSTGRES_PASSWORD: rendar
+    ports:
+      - "5432:5432"
+    volumes:
+      - rendar-postgres-data:/var/lib/postgresql/data
+
+volumes:
+  rendar-postgres-data:
